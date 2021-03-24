@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container-head {
+            display: flex;
+            background: #312234;
+            height: 100px;
+            justify-content: space-between; 
+        }
+
+        .flex-container-head div {
+            text-align: center;
+            color: white;
+        }
+        .menu {
+            display: flex;
+            line-height: 160px;
+            justify-content: space-between; 
+            flex-direction: row;
+            position:absolute;
+            right: 0vw;
+            font-size: 24px;
+        }
+        .main {
+            line-height: 128px;
+            font-size: 24px;
+            margin-right: 50px;
+        }
+        .contacts {
+            line-height: 128px;
+            font-size: 24px;
+            margin-right: 31px;
+        }
+
+        .flex-container-body {
+            display: flex;
+            margin-top:25px;
+            height: 127px;
+            justify-content: space-between; 
+        }
+
+        .product {
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            height: 127px;
+            width: 100vw;
+            justify-content: space-between; 
+        }
+
+        .product div {
+            text-align: center;
+            color: white;
+        }
+
+        .lower-header {
+            background: #312234;
+            width: 100vw;
+            position: fixed;
+            bottom: 0vh;
+        }
+        .image {
+            display: flex;
+        }
+        @media (max-width:800px){
+            .image { 
+                display: none;
+                margin: 0 auto;
+            }
+        }
+        body {
+            margin: 0;
+            background-color: #412A45;
+        }
+        A {
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container-head">
+        <div> <img src="images/Logo.png" alt="Error" height="100px"> </div>
+        <div class="menu">
+            <a href="Main.html"><div class="main"> Головна </div></a>
+            <a href="contacts.html"> <div class="contacts"> Контакти</div> </a>
+        </div>
+    </div>
+
+    <div class="flex-container-body">
+        <div><img src="images/Man_name.png" alt="Error" width="750px" height="600px" class="image"></div>
+        <div class="product"> 
+            <div style="font-size: 43px;"> Найновіший продукт </div>
+            <div><img src="images/Product.png" alt="Error"></div>
+            <a href="Det.html"><button style="background: #1762A7; width: 503px; font-size: 36px; color: white;"> Детальніше </div> </a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div style="margin-left: 90vw;">
+            <a href="https://t.me/nxxxthing" target="_blank"> <img src="images/telegram 1.png" alt="Error" style="margin-right: 24px;"> </a>
+            <a href="tel:+380987300911"> <img src="images/phone-call 1.png" alt="Error"> </a>
+        </div>
+    </div>
+</body>
+</html>
